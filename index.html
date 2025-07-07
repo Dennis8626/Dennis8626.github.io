@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Dennis Quispe - Portafolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -11,21 +13,40 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Roboto', sans-serif;
       background: linear-gradient(to right, #1e3c72, #2a5298);
       color: white;
       text-align: center;
-      padding: 40px;
+      padding: 40px 20px;
     }
     header {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+    }
+    .perfil-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     }
     h1 {
-      font-size: 3em;
+      font-size: 2.8em;
+      margin-bottom: 10px;
     }
-    p {
-      margin-top: 10px;
-      font-size: 1.2em;
+    p.descripcion {
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
+    section {
+      margin-top: 30px;
+    }
+    .sobre-mi {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.05em;
+      line-height: 1.6;
     }
     .botones {
       margin-top: 30px;
@@ -40,34 +61,45 @@
       color: white;
       text-decoration: none;
       transition: 0.3s;
+      font-weight: bold;
     }
     .botones a:hover {
       background-color: white;
       color: #2a5298;
     }
+    .botones a i {
+      margin-right: 8px;
+    }
     footer {
-      margin-top: 50px;
+      margin-top: 60px;
       font-size: 0.9em;
       opacity: 0.6;
     }
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <header>
+    <img class="perfil-img" src="https://avatars.githubusercontent.com/u/141997266?v=4" alt="Dennis Quispe">
     <h1>Dennis Quispe</h1>
-    <p>Bienvenido a mi página personal</p>
+    <p class="descripcion">Bienvenido a mi página personal</p>
   </header>
 
   <section>
-    <p>Aquí iré publicando mis proyectos, ejecutables y herramientas.</p>
+    <div class="sobre-mi">
+      <p>Hola, soy Dennis, entusiasta de la programación, los simuladores y las herramientas matemáticas interactivas. En esta página encontrarás mis proyectos, ejecutables y enlaces a mis redes profesionales.</p>
+    </div>
     <div class="botones">
-      <a href="https://github.com/Dennis8626" target="_blank">Mi GitHub</a>
-      <a href="mi_app.zip" download>Descargar ejecutable</a>
+      <a href="https://github.com/Dennis8626" target="_blank"><i class="fab fa-github"></i> Mi GitHub</a>
+      <a href="mi_app.zip" download><i class="fas fa-download"></i> Descargar ejecutable</a>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Dennis Quispe. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
+
