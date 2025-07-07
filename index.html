@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     * {
       margin: 0;
@@ -40,7 +41,7 @@
       opacity: 0.9;
     }
     section {
-      margin-top: 30px;
+      margin-top: 40px;
     }
     .sobre-mi {
       max-width: 600px;
@@ -48,13 +49,24 @@
       font-size: 1.05em;
       line-height: 1.6;
     }
-    .botones {
-      margin-top: 30px;
+    .seccion {
+      margin: 40px auto;
+      max-width: 800px;
+      text-align: left;
     }
-    .botones a {
+    .seccion h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      border-bottom: 2px solid white;
+      padding-bottom: 5px;
+      color: #ffdd57;
+    }
+    .descarga {
+      margin: 10px 0;
+    }
+    .descarga a {
       display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
+      padding: 10px 20px;
       background-color: #ffffff22;
       border: 1px solid white;
       border-radius: 8px;
@@ -63,12 +75,9 @@
       transition: 0.3s;
       font-weight: bold;
     }
-    .botones a:hover {
+    .descarga a:hover {
       background-color: white;
       color: #2a5298;
-    }
-    .botones a i {
-      margin-right: 8px;
     }
     footer {
       margin-top: 60px;
@@ -76,7 +85,6 @@
       opacity: 0.6;
     }
   </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -90,12 +98,47 @@
     <div class="sobre-mi">
       <p>Hola, soy Dennis, entusiasta de la programación, los simuladores y las herramientas matemáticas interactivas. En esta página encontrarás mis proyectos, ejecutables y enlaces a mis redes profesionales.</p>
     </div>
-    <div class="botones">
-      <a href="https://github.com/Dennis8626" target="_blank"><i class="fab fa-github"></i> Mi GitHub</a>
-      <a href="https://drive.google.com/uc?export=download&id=15zAk5lXY4XXDdVeG7CF0YBXXi4JMSZLo" target="_blank">
-        <i class="fas fa-download"></i> Descargar ejecutable
-      </a>
+
+    <!-- Sección GEOMETRÍA -->
+    <div class="seccion">
+      <h2>GEOMETRÍA</h2>
+      <div class="descarga">
+        <a href="https://drive.google.com/uc?export=download&id=15zAk5lXY4XXDdVeG7CF0YBXXi4JMSZLo" target="_blank">
+          <i class="fas fa-download"></i> Visualizador de Curvas 2D/3D
+        </a>
+      </div>
     </div>
+
+    <!-- Sección CÁLCULO -->
+    <div class="seccion">
+      <h2>CÁLCULO</h2>
+      <div class="descarga">
+        <a href="#" target="_blank">
+          <i class="fas fa-download"></i> Herramienta de Cálculo Diferencial
+        </a>
+      </div>
+    </div>
+
+    <!-- Sección ESTOCÁSTICA -->
+    <div class="seccion">
+      <h2>ESTOCÁSTICA</h2>
+      <div class="descarga">
+        <a href="#" target="_blank">
+          <i class="fas fa-download"></i> Simulación Estocástica
+        </a>
+      </div>
+    </div>
+
+    <!-- Sección ECUACIONES DIFERENCIALES -->
+    <div class="seccion">
+      <h2>ECUACIONES DIFERENCIALES</h2>
+      <div class="descarga">
+        <a href="#" target="_blank">
+          <i class="fas fa-download"></i> Simulador de EDEs
+        </a>
+      </div>
+    </div>
+
   </section>
 
   <footer>
@@ -104,4 +147,3 @@
 
 </body>
 </html>
-
