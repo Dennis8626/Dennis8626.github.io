@@ -2,26 +2,72 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Bienvenido a mi web</title>
+  <title>Dennis Quispe - Portafolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
       text-align: center;
-      background-color: #f0f0f0;
-      padding: 50px;
+      padding: 40px;
+    }
+    header {
+      margin-bottom: 40px;
     }
     h1 {
-      color: #2c3e50;
+      font-size: 3em;
     }
-    a {
-      color: #2980b9;
+    p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .botones {
+      margin-top: 30px;
+    }
+    .botones a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #ffffff22;
+      border: 1px solid white;
+      border-radius: 8px;
+      color: white;
       text-decoration: none;
+      transition: 0.3s;
+    }
+    .botones a:hover {
+      background-color: white;
+      color: #2a5298;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      opacity: 0.6;
     }
   </style>
 </head>
 <body>
-  <h1>Hola, soy Dennis</h1>
-  <p>Esta es mi página web personal. Próximamente subiré mis ejecutables aquí.</p>
-  <p>Repositorio GitHub: <a href="https://github.com/Dennis8626" target="_blank">Dennis8626</a></p>
+  <header>
+    <h1>Dennis Quispe</h1>
+    <p>Bienvenido a mi página personal</p>
+  </header>
+
+  <section>
+    <p>Aquí iré publicando mis proyectos, ejecutables y herramientas.</p>
+    <div class="botones">
+      <a href="https://github.com/Dennis8626" target="_blank">Mi GitHub</a>
+      <a href="mi_app.zip" download>Descargar ejecutable</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dennis Quispe. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
